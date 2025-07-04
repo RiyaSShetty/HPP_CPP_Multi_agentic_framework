@@ -1,4 +1,3 @@
-%%writefile edutrack_app.py
 from langgraph.graph import StateGraph, END
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
@@ -13,7 +12,7 @@ import time
 llm = ChatGroq(
     temperature=0,
     model_name="llama3-8b-8192",
-    api_key="YOUR_KEY"
+    api_key="YOUR_GROQ_API_KEY"
 )
 
 # --- Load Datasets ---
